@@ -24,7 +24,10 @@ function App() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch("https://mockapi.io/projects/660549352ca9478ea17ff01a");
+				const response = await fetch(
+					"https://api.telnyx.com/v2/mobile_network_operators' \
+				-H 'Accept: application/json"
+				);
 				const jsonData = await response.json();
 				// Map the fetched data to fit the columns
 				const mappedData = jsonData.map((item) => ({
