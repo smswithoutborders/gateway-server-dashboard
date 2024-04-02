@@ -6,10 +6,8 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
-import { FaChartSimple, FaHouse } from "react-icons/fa6";
 import { AppBar, Button, IconButton, Divider, Paper, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "@mui/icons-material";
@@ -38,18 +36,7 @@ function ResponsiveDrawer({ darkMode, toggleDarkMode }) {
 			<List sx={{ flexGrow: 1 }}>
 				<ListItem>
 					<ListItemButton component="a" to="/">
-						<ListItemIcon>
-							<FaHouse />
-						</ListItemIcon>
 						<ListItemText> Dashboard </ListItemText>
-					</ListItemButton>
-				</ListItem>
-				<ListItem>
-					<ListItemButton component="a" to="/charts">
-						<ListItemIcon>
-							<FaChartSimple />
-						</ListItemIcon>
-						<ListItemText> Charts </ListItemText>
 					</ListItemButton>
 				</ListItem>
 			</List>
@@ -106,9 +93,6 @@ function ResponsiveDrawer({ darkMode, toggleDarkMode }) {
 					<Box display="flex">
 						<Link to="/">
 							<Typography sx={{ borderRadius: "50px", m: 1 }}>Dashboard</Typography>
-						</Link>
-						<Link to="/charts">
-							<Typography sx={{ borderRadius: "50px", m: 1 }}>Charts</Typography>
 						</Link>
 					</Box>
 					<Box>

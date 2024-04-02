@@ -5,7 +5,6 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Dashboard from "./Pages/Dashboard";
 import ResponsiveDrawer from "./Components/Nav";
-import Chart from "./Pages/Charts";
 import Loader from "./Components/Loader";
 import DialogTable from "./Pages/TableDialog";
 import Footer from "./Components/Footer";
@@ -44,7 +43,6 @@ function App() {
 						<Routes>
 							{" "}
 							<Route path="/" element={<Dashboard />} />
-							<Route path="/charts" element={<Chart />} />
 							<Route path="/data" element={<DialogTable />} />
 						</Routes>
 						<Footer />

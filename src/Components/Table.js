@@ -28,7 +28,7 @@ function App() {
 					"https://660549352ca9478ea17ff019.mockapi.io/gateway/api/table-data"
 				);
 				const jsonData = await response.json();
-				// Map the fetched data to fit the columns
+				// Mapping the fetched data
 				const mappedData = jsonData.map((item) => ({
 					id: item.id,
 					msisdn: item.msisdn,
@@ -38,7 +38,7 @@ function App() {
 					routed: item.routed,
 					success: item.success,
 					failure: item.failure,
-					error: item.error // Add error column mapping
+					error: item.error
 				}));
 
 				setData(mappedData);
