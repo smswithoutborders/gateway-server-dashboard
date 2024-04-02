@@ -8,7 +8,9 @@ export default function Dashboard() {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch("https://mockapi.io/projects/660549352ca9478ea17ff01a");
+				const response = await fetch(
+					"https://660549352ca9478ea17ff019.mockapi.io/gateway/api/table-data"
+				);
 				const jsonData = await response.json();
 				// Calculate the total number of unique operators
 				const uniqueOperators = new Set(jsonData.map((item) => item.operator));

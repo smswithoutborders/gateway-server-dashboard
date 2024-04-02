@@ -25,12 +25,12 @@ function App() {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					"https://api.telnyx.com/v2/mobile_network_operators' \
-				-H 'Accept: application/json"
+					"https://660549352ca9478ea17ff019.mockapi.io/gateway/api/table-data"
 				);
 				const jsonData = await response.json();
 				// Map the fetched data to fit the columns
 				const mappedData = jsonData.map((item) => ({
+					id: item.id,
 					msisdn: item.msisdn,
 					country: item.country,
 					operator: item.operator,
@@ -38,9 +38,9 @@ function App() {
 					routed: item.routed,
 					success: item.success,
 					failure: item.failure,
-					error: item.error,
-					id: item.id
+					error: item.error // Add error column mapping
 				}));
+
 				setData(mappedData);
 			} catch (error) {
 				console.error("Error fetching data:", error);

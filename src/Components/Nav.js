@@ -64,7 +64,11 @@ function ResponsiveDrawer({ darkMode, toggleDarkMode }) {
 			>
 				<Paper elevation={3} sx={{ p: 2 }}>
 					<Typography sx={{ py: 2 }}>Check out RelaySMS blog posts</Typography>
-					<Button variant="contained" sx={{ borderRadius: "50px", textTransform: "none" }}>
+					<Button
+						href="https://smswithoutborders.com"
+						variant="contained"
+						sx={{ borderRadius: "50px", textTransform: "none" }}
+					>
 						Read more <ChevronRight />
 					</Button>
 				</Paper>

@@ -1,6 +1,6 @@
 {
-	"short_name": "Reliability Dashboard",
-	"name": "Gateway Clients Reliability Dashboard",
+	"short_name": "Server Dashboard",
+	"name": "Gateway Server Dashboard",
 	"icons": [
 		{
 			"src": "favicon.ico",

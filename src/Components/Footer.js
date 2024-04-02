@@ -13,9 +13,15 @@ export default function Footer() {
 					<Box display="flex" justifyContent="space-between" sx={{ p: 3 }}>
 						<Typography variant="body2">© {new Date().getFullYear()} SMSWithoutBorders</Typography>
 						<Box justifyContent="end">
-							<FaGithub size="20px" style={{ margin: 2 }} />{" "}
-							<FaFacebook size="20px" style={{ margin: 2 }} />{" "}
-							<FaXTwitter size="20px" style={{ margin: 2 }} />
+							<a href="https://github.com/smswithoutborders">
+								<FaGithub size="20px" style={{ margin: 2 }} />
+							</a>{" "}
+							<a href="https://web.facebook.com/SMSWithoutBorders?_rdc=1&_rdr">
+								<FaFacebook size="20px" style={{ margin: 2 }} />
+							</a>{" "}
+							<a href="https://twitter.com/SwobOutreach">
+								<FaXTwitter size="20px" style={{ margin: 2 }} />
+							</a>
 						</Box>
 					</Box>
 				</Grid>
